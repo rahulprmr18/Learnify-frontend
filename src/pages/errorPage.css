@@ -1,0 +1,39 @@
+/* filepath: frontend/src/pages/errorPage.css */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.error-page h1 {
+  font-size: 6rem;
+  color: #ff6b6b;
+  margin-bottom: 20px;
+}
+
+.error-page p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.common-btn {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.common-btn:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}

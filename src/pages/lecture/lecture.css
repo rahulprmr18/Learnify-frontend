@@ -1,0 +1,251 @@
+/* lecture.css */
+.lecture-page {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+  font-family: 'Arial', sans-serif;
+}
+
+.left {
+  flex: 2;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.left video {
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.left h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.left h3 {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.common-btn {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.common-btn:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+.lecture-number {
+  background: #ecf0f1;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lecture-number:hover {
+  background: #dfe6e9;
+  transform: translateX(5px);
+}
+
+.lecture-number.active {
+  background: #2980b9;
+  color: #fff;
+}
+
+.lecture-form {
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lecture-form h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #34495e;
+}
+
+.lecture-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.lecture-form label {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.lecture-form input[type="text"],
+.lecture-form input[type="file"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.lecture-form input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.lecture-form video {
+  margin-top: 10px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lecture-form video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.lecture-page {
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Modern and polished styling for the progress section */
+.progrss {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.progrss progress {
+  width: 100%;
+  height: 25px;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e5e5e5;
+  margin: 10px 0;
+  position: relative;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.progrss progress::-webkit-progress-bar {
+  background: #e5e5e5;
+  border-radius: 12px;
+}
+
+.progrss progress::-webkit-progress-value {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+
+  border-radius: 12px;
+  transition: width 0.4s ease;
+}
+
+.progrss progress::-moz-progress-bar {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  border-radius: 12px;
+  transition: width 0.4s ease;
+}
+
+/* .progrss:hover progress::-webkit-progress-value {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+} */
+
+.progrss span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #555;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Tickmark styling */
+.lecture-number span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  color: #4caf50;
+  font-size: 18px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.lecture-number span svg {
+  width: 20px;
+  height: 20px;
+}
+
+.lecture-number.active span {
+  color: #2e7d32;
+  transform: scale(1.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+/* Adding smooth fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

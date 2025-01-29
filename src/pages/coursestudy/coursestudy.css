@@ -1,0 +1,86 @@
+/* coursestudy.css */
+.course-study-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.course-study-page img {
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-study-page img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.course-study-page h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.course-study-page h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #34495e;
+}
+
+.course-study-page h5 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #7f8c8d;
+}
+
+.course-study-page a {
+  text-decoration: none;
+  color: #2980b9;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.course-study-page a:hover {
+  color: #3498db;
+  transform: scale(1.1);
+}
+
+.course-study-page a h2 {
+  border: 2px solid #2980b9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.course-study-page a h2:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.course-study-page {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Smooth fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,77 @@
+/* Updated CSS with modern trends */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #f3e5f5); /* Gradient background */
+}
+
+.auth-form {
+  background: #ffffff; /* White card background */
+  padding: 40px 50px;
+  border-radius: 15px; /* Softer, modern card shape */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-form:hover {
+  transform: translateY(-5px); /* Subtle hover effect */
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.auth-form h2 {
+  text-align: center;
+  color: #3949ab; /* Modern deep blue */
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #6d4c41; /* Warm brown text */
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Softer input fields */
+  font-size: 15px;
+  color: #6d4c41; /* Warm brown text */
+  background-color: #f7f9fc; /* Light gray background */
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #3949ab; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(57, 73, 171, 0.3);
+}
+
+.auth-form p {
+  text-align: center;
+  margin-top: 20px;
+  color: #6d4c41; /* Warm brown text */
+  font-size: 15px;
+}
+
+.auth-form p a {
+  color: #3949ab; /* Deep blue link */
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.auth-form p a:hover {
+  color: #1e88e5;
+  text-decoration: underline; /* Underline on hover */
+}

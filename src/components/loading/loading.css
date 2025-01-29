@@ -1,0 +1,121 @@
+/* Global body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Neutral, clean educational background */
+}
+
+/* Center the loader */
+.loading-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4e79ff, #43c8ff);
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Multi-layered loader */
+.loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Outer rotating gradient ring */
+.loader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid transparent;
+  border-top: 4px solid #ffffff;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+  background: conic-gradient(from 0deg, #4e79ff, #43c8ff, #4e79ff, #43c8ff);
+}
+
+/* Inner glowing circle */
+.loader::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 56px;
+  height: 56px;
+  background: radial-gradient(circle, #ffffff 10%, transparent 70%);
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+  animation: glow 2s infinite ease-in-out;
+}
+
+/* Ripple effect around the loader */
+.ripple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: rippleEffect 2s infinite ease-out;
+}
+
+/* Ripple duplication */
+.ripple:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.ripple:nth-child(3) {
+  animation-delay: 1s;
+}
+
+/* Animations */
+
+/* Rotating ring */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Glow effect */
+@keyframes glow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+/* Pulsing scale */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Expanding ripple */
+@keyframes rippleEffect {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}

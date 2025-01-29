@@ -1,0 +1,85 @@
+/* Base styling for the footer */
+footer {
+  background: linear-gradient(135deg, #3949ab, #1e88e5);
+  color: #ecf0f1;
+  padding: 20px 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+/* Footer content */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+/* Responsive text styling */
+.footer-content p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Styling for the copyright and name */
+.footer-content p a {
+  color: #cfdde6;
+  text-decoration: none;
+}
+
+.footer-content p a:hover {
+  text-decoration: underline;
+}
+
+/* Social icons container */
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Styling for social media icons */
+.social-links a {
+  color: #ecf0f1;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #6dbaed; /* Add hover effect for modern feel */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer-content p {
+    font-size: 14px;
+  }
+
+  .social-links {
+    gap: 15px;
+  }
+
+  .social-links a {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    padding: 15px 0;
+  }
+
+  .footer-content p {
+    font-size: 13px;
+  }
+
+  .social-links {
+    gap: 12px;
+  }
+
+  .social-links a {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,82 @@
+/* account.css */
+.profile {
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 5rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.profile h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  margin: 0.8rem 0;
+  color: #555;
+}
+
+.profile-info strong {
+  font-weight: 600;
+}
+
+.common-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.2rem;
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.common-btn:hover {
+  background-color: #0056b3;
+}
+
+.common-btn svg {
+  font-size: 1.2rem;
+}
+
+.common-btn[style*="background: red"] {
+  background-color: red;
+}
+
+.common-btn[style*="background: red"]:hover {
+  background-color: darkred;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .profile {
+    padding: 1.5rem;
+  }
+
+  .profile h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-info p {
+    font-size: 0.9rem;
+  }
+
+  .common-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+}
